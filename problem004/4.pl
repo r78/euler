@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 sub palindrome {
-	my$top = shift;
+	my $top = shift;
 	my $floor = shift;
 	my $max = 0;
 	while ($top > $floor){
