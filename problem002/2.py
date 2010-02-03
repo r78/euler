@@ -7,7 +7,11 @@ def fib(n):
       h[n] = fib(n - 1) + fib(n - 2)
    return h[n]
 
-x = 1
-while fib(x) < 4000000:
-	x += 1
-print fib(x) - 1
+x = 2
+total = 0
+i = fib(x)
+while i < 4000000:
+	total += i
+	x += 3
+	i = fib(x)
+print total

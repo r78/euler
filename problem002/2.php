@@ -3,22 +3,28 @@
 //slow
 $h = Array();
 
-function fib($n){
+function fib($n, $h){
 	if ($h[$n] == null) {
 		if ($n < 2) {
-			return 1;
-		} else { 
-			return fib($n - 1) + fib($n - 2);
+			$h[$n] = 1;
+			return $h[$n];
+		} else {
+			$h[$n] = fib($n - 1, $h) + fib($n - 2, $h);
+			return $h[$n];
 		}
 	} else {
 		return $h[$n];
 	}
 }
 
-$x = 1;
-while (fib($x) < 4000000) {
-	$x += 1;
+$total = 0;
+$x = 2;
+$i = fib($x, $h);
+while ($i < 4000000) {
+	$total += $i;
+	$x += 3;
+	$i = fib($x, $h);
 }
 
-print(fib($x) - 1);
+print($total);
 ?>

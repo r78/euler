@@ -1,10 +1,14 @@
 public class euler2{
 	public static void main(String[] args){
-		int x = 1;
+		int x = 2;
+		int total = 0;
+		int i = fib(x);
 		while (fib(x) < 4000000) {
-			x += 1;
+			total += i;
+			x += 3;
+			i = fib(x);
 		}
-		System.out.println(fib(x) - 1);
+		System.out.println(total);
 	}
 	private static int[] a;
 	private static int fib(int n){

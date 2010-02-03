@@ -8,9 +8,17 @@ def fib(n)
 	end
 end
 
-x = 1
-while fib(x) < 4_000_000 do
-	x += 1
+
+def sum_even_valued_terms_under(n)
+	x = 2 #first even valued term
+	total = 0
+	i = fib(x)
+	while i < n do
+		total += i
+		x += 3 #every 3rd number is even 
+		i = fib(x)
+	end
+	return total
 end
 
-p fib(x) - 1
+p sum_even_valued_terms_under(4_000_000)
