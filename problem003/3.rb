@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 n = 600851475143
-i = 2
-def factor(n, i)
+
+def factor(n)
     maxfactor = 2
+	i = 2
     while i < n/2 do
         if n % i == 0 then
             n = n / i
@@ -14,4 +15,4 @@ def factor(n, i)
     return maxfactor
 end
 
-puts factor(n, i)
+puts factor(n)
