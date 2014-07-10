@@ -9,7 +9,7 @@ def palindrome(top, floor)
 			y -= 1 if y % 2 == 0
 			#if the product isn't greater than max we don't check if its a palindrome
 			break if top * y < max
-			#palindrome have 11 as a factor, if x does not have it, then y should have it
+			#palindromes have 11 as a factor, if x does not have it, then y should have it
 			y = y - (y % 11) if top % 11 != 0
 			n = (top * y).to_s
 			max = n.to_i if n == n.reverse
