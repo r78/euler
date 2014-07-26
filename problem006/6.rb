@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
+#
 def sum_of_squares(n)
 	(n * (n + 1) * ((2 * n) + 1)) / 6
 end
 
 def square_of_sum(n)
-	sum = n % 2 == 0 ? (n / 2) * (n + 1) : ((n / 2) * (n + 1)) + n
+	sum = (n / 2) * (n + 1)
+	sum += n % 2 == 0 ? 0 : n
 	sum ** 2
 end
 
