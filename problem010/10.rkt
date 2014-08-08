@@ -20,7 +20,6 @@
 (define (sieve1 vec n)
     (let loop ((i 0))
         (cond
-            ;((>= (+ i 1) (vector-length vec)) vec)
             ((>= (square (vector-ref vec i)) n) vec)
             (else
                 (cond
