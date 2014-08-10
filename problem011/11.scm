@@ -29,7 +29,7 @@
 (define (add1 n)
     (+ n 1))
 
-(define (rows grid largest xdir ydir xstart xend ystart yend)
+(define (max-product grid largest xdir ydir xstart xend ystart yend)
     (let loop ((i xstart) (largest largest))
         (cond
             ((<= i xend)
@@ -52,10 +52,10 @@
     x)
 
 ; find the largest product in each direction
-(define vertical (rows grid 0 same + 0 (sub1 size) 0 (- size 4)))
-(define horizontal (rows grid 0 + same 0 (- size 4) 0 (sub1 size)))
-(define right-upwards (rows grid 0 + - 0 (- size 4) 3 (sub1 size)))
-(define right-downwards (rows grid 0 + + 0 (- size 4) 0 (- size 4)))
+(define vertical (max-product grid 0 same + 0 (sub1 size) 0 (- size 4)))
+(define horizontal (max-product grid 0 + same 0 (- size 4) 0 (sub1 size)))
+(define right-upwards (max-product grid 0 + - 0 (- size 4) 3 (sub1 size)))
+(define right-downwards (max-product grid 0 + + 0 (- size 4) 0 (- size 4)))
 
 ; find the maximum of all four largest products
 (display (max vertical horizontal right-upwards right-downwards))
