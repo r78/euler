@@ -1,3 +1,6 @@
+#lang racket/base
+(require racket/vector)
+(require racket/bool)
 (require srfi/1)
 
 ; a vector of numbers from 2 to n
