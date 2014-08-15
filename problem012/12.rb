@@ -26,9 +26,4 @@ triangle = Enumerator.new{|t|
 }
 
 #find the first triangle number with more than 500 divisors
-triangle.each{|n|
-    if divisors_count(n) > 500
-        puts n
-        break
-    end
-}
+puts triangle.find{|n| divisors_count(n) > 500}
