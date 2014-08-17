@@ -25,6 +25,6 @@
         (define divisors (count_divisors triangle))
         (cond
             ((> divisors 500) triangle)
-            (else (loop (+ i 1) (+ triangle (+ i 1)))))))
+            (else (loop (+ i 1) (quotient (* i (+ i 1)) 2))))))
 
 (display (solve))
