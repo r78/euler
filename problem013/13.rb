@@ -101,6 +101,6 @@ st_nums = "37107287533902102798797998220837590246510135740250
 20849603980134001723930671666823555245252804609722
 53503534226472524250874054075591789781264330331690"
 
-arr_nums = st_nums.split("\n").map{|line| line.chomp.to_i }
+arr_nums = st_nums.split("\n").map{|line| line[0, 11].chomp.to_i }
 total = arr_nums.inject(0){|num, acc| acc += num}
 puts total.to_s[0..9]
