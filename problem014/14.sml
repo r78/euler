@@ -1,5 +1,5 @@
 fun collatz(n) =
-    let fun loop(start, steps) =
+    let fun loop(start : IntInf.int, steps) =
         if (start = 1)
         then steps
         else 
@@ -25,5 +25,6 @@ fun longest(top) =
         loop(2, 0, 2)
     end;
 
-(* longest(999999); *)
-longest(9999);
+longest(999999);
+
+val _ = OS.Process.exit(OS.Process.success);
