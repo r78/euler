@@ -52,5 +52,5 @@ fun divisors_count(n: int): int =
 
 val result = hd(takeN(filter (fn n => divisors_count n > 500) (triangle(0, 1)), 1));
 
-print (Int.toString result ^ "\n");
-OS.Process.exit(OS.Process.success);
+val () = print (Int.toString result ^ "\n");
+val _ = OS.Process.exit(OS.Process.success);
