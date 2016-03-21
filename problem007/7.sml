@@ -35,4 +35,4 @@ fun nth_prime(n) =
             
 nth_prime(10001);
 
-OS.Process.exit(OS.Process.success);
+val _ = OS.Process.exit(OS.Process.success);
