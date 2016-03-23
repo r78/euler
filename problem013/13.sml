@@ -5,4 +5,4 @@ val sum = foldl (fn (x, acc) => valOf(x) + acc) 0 (map (fn x => LargeInt.fromStr
 val st_sum = substring (LargeInt.toString sum, 0, 10);
 
 val _ = print (st_sum ^ "\n");
-OS.Process.exit(OS.Process.success);
+val _ = OS.Process.exit(OS.Process.success);

@@ -18,4 +18,4 @@ fun solve(n) =
     end;
      
 solve 1000;
-OS.Process.exit(OS.Process.success);
+val _ = OS.Process.exit(OS.Process.success);

@@ -24,4 +24,4 @@ fun solve(lst) =
 
 solve(lst);
 
-OS.Process.exit(OS.Process.success);
+val _ = OS.Process.exit(OS.Process.success);

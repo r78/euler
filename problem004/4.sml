@@ -22,5 +22,4 @@ fun solve (limit) =
     end;
 
 solve(100);
-OS.Process.exit(OS.Process.success);
-
+val _ = OS.Process.exit(OS.Process.success);

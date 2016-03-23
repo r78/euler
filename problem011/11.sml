@@ -58,4 +58,4 @@ val horizontal = max_product(grid, vertical, up, same, 0, (size - 4), 0, (size -
 val right_upwards = max_product(grid, horizontal, up, down, 0, (size - 4), 3, (size - 1));
 val right_downwards = max_product(grid, right_upwards, up, up, 0, (size - 4), 0, (size - 4));
 val max = right_downwards;
-OS.Process.exit(OS.Process.success);
+val _= OS.Process.exit(OS.Process.success);
