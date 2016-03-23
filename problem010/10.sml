@@ -34,4 +34,4 @@ fun primes_below(max : IntInf.int) =
     end;
 
 primes_below 2000000;
-OS.Process.exit(OS.Process.success);
+val _ = OS.Process.exit(OS.Process.success);
