@@ -1,4 +1,6 @@
-#lang racket
+#lang racket/base
+(require racket/list)
+
 (define first-ten '("one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten"))
 (define second-ten '("eleven" "twelve" "thirteen" "fourteen" "fifteen" "sixteen" "seventeen" "eighteen" "nineteen"))
 (define units '("one" "two" "three" "four" "five" "six" "seven" "eight" "nine"))
