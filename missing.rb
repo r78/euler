@@ -9,8 +9,8 @@ h_exts = {
 'js' => 'javascript',
 'java' => 'java',
 
-'php' => 'php',
 'py' => 'python',
+'php' => 'php',
 'pl' => 'perl',
 'lua' => 'lua',
 'c' => 'c',
